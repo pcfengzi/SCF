@@ -123,7 +123,8 @@ namespace Senparc.Service
             //SenparcEntities 工厂配置
             Func<IServiceProvider, SenparcEntities> senparcEntitiesImplementationFactory = s =>
                 new SenparcEntities(new DbContextOptionsBuilder<SenparcEntities>()
-                    .UseSqlServer(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,
+                    //.UseSqlServer(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,                    
+                    .UseMySQL(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,
                                     b => base.DbContextOptionsAction(b, "Senparc.Service")/*从当前程序集读取*/)
                     .Options);
             services.AddScoped(senparcEntitiesImplementationFactory);
@@ -133,12 +134,13 @@ namespace Senparc.Service
             //SystemServiceEntities 工厂配置（实际不会用到）
             Func<IServiceProvider, SystemServiceEntities> systemServiceEntitiesImplementationFactory = s =>
                new SystemServiceEntities(new DbContextOptionsBuilder<SystemServiceEntities>()
-                   .UseSqlServer(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,
+                   //.UseSqlServer(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,
+                   .UseMySQL(Scf.Core.Config.SenparcDatabaseConfigs.ClientConnectionString,
                                    b => base.DbContextOptionsAction(b, "Senparc.Service")/*从当前程序集读取*/)
                    .Options);
             services.AddScoped(systemServiceEntitiesImplementationFactory);
 
-            services.AddScoped(typeof(ISqlClientFinanceData), typeof(SqlClientFinanceData));
+          services.AddScoped(typeof(ISqlClientFinanceData), typeof(SqlClientFinanceData));
             services.AddScoped(typeof(ISqlBaseFinanceData), typeof(SqlClientFinanceData));
 
             //预加载 EntitySetKey

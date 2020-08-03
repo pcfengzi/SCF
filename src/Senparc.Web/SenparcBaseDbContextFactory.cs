@@ -38,7 +38,8 @@ namespace Senparc.Web
 
             var builder = new DbContextOptionsBuilder<SenparcEntities>();
 
-            builder.UseSqlServer(sqlConnection, b => systemServiceRegister.DbContextOptionsAction(b, "Senparc.Web"));//beta5
+            //builder.UseSqlServer(sqlConnection, b => systemServiceRegister.DbContextOptionsAction(b, "Senparc.Web"));//beta5
+            builder.UseMySQL(sqlConnection, b => systemServiceRegister.DbContextOptionsAction(b, "Senparc.Web"));//beta5
             return new SenparcEntities(builder.Options);
         }
     }
