@@ -56,6 +56,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensionCode", "..\XscfE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senparc.Web.FirefoxDriverTest", "Senparc.Web.FirefoxDriverTest\Senparc.Web.FirefoxDriverTest.csproj", "{22B88A11-137D-42FB-9ED0-AC15A3FF651F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiyModules", "DiyModules", "{52C3994A-EE98-412E-8C60-4DD27E2DA4AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination", "DiyModules\Examination\Examination\Examination.csproj", "{27E9B39E-9DB4-40B8-BF92-58F2162E0653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +184,12 @@ Global
 		{22B88A11-137D-42FB-9ED0-AC15A3FF651F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22B88A11-137D-42FB-9ED0-AC15A3FF651F}.Test|Any CPU.ActiveCfg = Debug|Any CPU
 		{22B88A11-137D-42FB-9ED0-AC15A3FF651F}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653}.Test|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +210,7 @@ Global
 		{346475E8-6E39-4AA9-896F-893DC47AD3D7} = {76FC86E0-991D-47B7-8AAB-42B27DAB10C1}
 		{A21645FD-561A-4B91-AA01-6B4E030FFD9E} = {76FC86E0-991D-47B7-8AAB-42B27DAB10C1}
 		{22B88A11-137D-42FB-9ED0-AC15A3FF651F} = {4D53646F-67EE-430A-8B50-9600CFACF434}
+		{27E9B39E-9DB4-40B8-BF92-58F2162E0653} = {52C3994A-EE98-412E-8C60-4DD27E2DA4AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7427A6C9-D522-4B10-B0AC-607D69736B50}
