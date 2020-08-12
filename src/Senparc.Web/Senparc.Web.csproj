@@ -518,6 +518,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\XscfExtensionSample\MyExtensionCode\MyExtensionCode.csproj" />
+    <ProjectReference Include="..\DiyModules\Examination\Examination\Examination.csproj" />
     <ProjectReference Include="..\Senparc.Areas.Admin\Senparc.Areas.Admin.csproj" />
     <ProjectReference Include="..\Senparc.Core\Senparc.Core.csproj" />
     <ProjectReference Include="..\Senparc.ImageUtility\Senparc.ImageUtility.csproj" />
